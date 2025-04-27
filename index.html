@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Элины Фридман</title>
+    <!-- Подключение Google Fonts с шрифтом Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Заголовки "ОБО МНЕ" и "ПОРТФОЛИО" с шрифтом Light и заглавными буквами */
+        h2#about-title, h2#portfolio-title {
+            font-weight: 300; /* Light */
+            text-transform: uppercase; /* Заглавные буквы */
+            font-size: 2.5rem; /* Крупный кегль */
+        }
+
+        /* Остальные заголовки с шрифтом Regular */
+        h3 {
+            font-weight: 400; /* Regular */
+            text-transform: none; /* Заглавные и строчные буквы */
+        }
+
+        /* Текст в разделе "Обо мне" */
+        #about p {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: left; /* Направление текста слева направо */
+        }
+
+        /* Раздел "Обо мне" - двухколоночный формат */
+        #about .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Контакты - Центрирование */
+        #contact {
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: #000;
+            border-color: #000;
+            color: white;
+            margin: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #333;
+            border-color: #333;
+        }
+
+        .portfolio-img img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .portfolio-img img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Слайдер для картинок */
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Стиль для контейнера "Обо мне" */
+        #about .container {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Элина Фридман — художник, графический дизайнер</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Раздел "Обо мне" -->
+    <section id="about" class="text-center py-5 bg-light">
+        <div class="container">
+            <h2 id="about-title">Обо мне</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Меня зовут Элина Фридман, и я могу быть вам полезна. 
+                    <p>Я дизайнер с многолетним опытом в области графического дизайна и большим опытом работы в веб-дизайне. Я уверена, что смогу внести значительный вклад в развитие вашей компании. У меня есть релевантный опыт, и я уверена, что подхожу вам в качестве дизайнера. Давайте познакомимся!</p>
+                    <p>На протяжении своей карьеры я работала с различными проектами в широком спектре индустрий. Мои навыки включают создание брендинга и поддержание, разработку корпоративной идентичности, создание интерфейсов для веб-сайтов и мобильных приложений, а также разработку маркетинговых материалов. Благодаря этому разнообразию я имею широкий взгляд на потребности бизнеса и обладаю умением эффективно интегрировать эстетику с функциональностью.</p>
+                    <p>Особое внимание хочу уделить созданию упаковки для различных типов продуктов: продуктовые наборы, подарочные боксы, PR-киты и представительские комплекты. Мной реализованы значительные проекты в секторе FMCG по созданию облика продукта. Так же мной сделаны значительные проекты брендирования сувенирной продукции, серий мерча и презентационных комплектов.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Есть уверенные навыки в POP/POS Display Design — создании конструкций для мест продаж, включая гофрокартонные дисплеи, презентационные стенды, а также их визуальное оформление, фотопривязки. Занималась разработкой как визуальной части, так и конструктивной — от идеи до финальной штанц-формы, с учетом технологии вырубки, биговки и особенностей производства. Уверенно владею инструментами для технического дизайна упаковки, умею создавать точные развертки и шаблоны, работать с контуром вырубки и подготавливать макеты к производству. Адаптирую дизайн под реальные технические условия. Препресс подготовка, пантоны, отделка.</p>
+                    <p>Я высоко мотивирована и готова вкладывать свои знания и энергию в развитие проектов, которые создают реальную ценность. Мое портфолио включает успешные проекты для различных клиентов и бизнесов. В том числе — создание фирменных стилей, которые обеспечили узнаваемость бренда, разработка веб-дизайнов, которые увеличили конверсии, и рекламные кампании, которые привлекли внимание целевой аудитории.</p>
+                    <p>Я ценю возможность работать с профессиональной и творческой командой. Я уверена, что мой опыт и подход к решению задач могут быть полезны для достижения ваших целей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Портфолио" -->
+    <section id="portfolio" class="bg-dark text-light text-center py-5">
+        <div class="container">
+            <h2 id="portfolio-title">Портфолио</h2>
+
+            <!-- Слайдер для полиграфии -->
+<h3 class="mt-5 mb-3">Полиграфия, Упаковка, Рекламные акции KV</h3>
+<div id="poligrafiaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Изображения из папки 1 images -->
+        <div class="carousel-item active">
+            <img src="1 images/image-poligraf-2.jpg" class="d-block w-100" alt="Полиграфия 2">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-3.jpg" class="d-block w-100" alt="Полиграфия 3">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-4.jpg" class="d-block w-100" alt="Полиграфия 4">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-5.jpg" class="d-block w-100" alt="Полиграфия 5">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-6.jpg" class="d-block w-100" alt="Полиграфия 6">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-7.jpg" class="d-block w-100" alt="Полиграфия 7">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-8.jpg" class="d-block w-100" alt="Полиграфия 8">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-9.jpg" class="d-block w-100" alt="Полиграфия 9">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-10.jpg" class="d-block w-100" alt="Полиграфия 10">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-11.jpg" class="d-block w-100" alt="Полиграфия 11">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-12.jpg" class="d-block w-100" alt="Полиграфия 12">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-13.jpg" class="d-block w-100" alt="Полиграфия 13">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-14.jpg" class="d-block w-100" alt="Полиграфия 14">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-15.jpg" class="d-block w-100" alt="Полиграфия 15">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-16.jpg" class="d-block w-100" alt="Полиграфия 16">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-17.jpg" class="d-block w-100" alt="Полиграфия 17">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-18.jpg" class="d-block w-100" alt="Полиграфия 18">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-19.jpg" class="d-block w-100" alt="Полиграфия 19">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-20.jpg" class="d-block w-100" alt="Полиграфия 20">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-21.jpg" class="d-block w-100" alt="Полиграфия 21">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-22.jpg" class="d-block w-100" alt="Полиграфия 22">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-23.jpg" class="d-block w-100" alt="Полиграфия 23">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-24.jpg" class="d-block w-100" alt="Полиграфия 24">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-25.jpg" class="d-block w-100" alt="Полиграфия 25">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-26.jpg" class="d-block w-100" alt="Полиграфия 26">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-27.jpg" class="d-block w-100" alt="Полиграфия 27">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-28.jpg" class="d-block w-100" alt="Полиграфия 28">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-29.jpg" class="d-block w-100" alt="Полиграфия 29">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-30.jpg" class="d-block w-100" alt="Полиграфия 30">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-31.jpg" class="d-block w-100" alt="Полиграфия 31">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-32.jpg" class="d-block w-100" alt="Полиграфия 32">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-33.jpg" class="d-block w-100" alt="Полиграфия 33">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-34.jpg" class="d-block w-100" alt="Полиграфия 34">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-35.jpg" class="d-block w-100" alt="Полиграфия 35">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-36.jpg" class="d-block w-100" alt="Полиграфия 36">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-37.jpg" class="d-block w-100" alt="Полиграфия 37">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-38.jpg" class="d-block w-100" alt="Полиграфия 38">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-39.jpg" class="d-block w-100" alt="Полиграфия 39">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-40.jpg" class="d-block w-100" alt="Полиграфия 40">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-41.jpg" class="d-block w-100" alt="Полиграфия 41">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-42.jpg" class="d-block w-100" alt="Полиграфия 42">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-43.jpg" class="d-block w-100" alt="Полиграфия 43">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-44.jpg" class="d-block w-100" alt="Полиграфия 44">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-45.jpg" class="d-block w-100" alt="Полиграфия 45">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-46.jpg" class="d-block w-100" alt="Полиграфия 46">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-47.jpg" class="d-block w-100" alt="Полиграфия 47">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-48.jpg" class="d-block w-100" alt="Полиграфия 48">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-49.jpg" class="d-block w-100" alt="Полиграфия 49">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-50.jpg" class="d-block w-100" alt="Полиграфия 50">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-51.jpg" class="d-block w-100" alt="Полиграфия 51">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-52.jpg" class="d-block w-100" alt="Полиграфия 52">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-53.jpg" class="d-block w-100" alt="Полиграфия 53">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-54.jpg" class="d-block w-100" alt="Полиграфия 54">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-55.jpg" class="d-block w-100" alt="Полиграфия 55">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-56.jpg" class="d-block w-100" alt="Полиграфия 56">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-57.jpg" class="d-block w-100" alt="Полиграфия 57">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-58.jpg" class="d-block w-100" alt="Полиграфия 58">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-59.jpg" class="d-block w-100" alt="Полиграфия 59">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-60.jpg" class="d-block w-100" alt="Полиграфия 60">
+        </div>
+        <div class="carousel-item">
+            <img src="1 images/image-poligraf-61.jpg" class="d-block w-100" alt="Полиграфия 61">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#poligrafiaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#poligrafiaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+    </button>
+</div>
+
+            <!-- Слайдер для Figma -->
+<h3 class="mt-5 mb-3">Figma-проекты (Сайты, Акции, Рассылки)</h3>
+<div id="figmaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Изображения из папки 2 images -->
+        <div class="carousel-item active">
+            <img src="2 images/figma-image-2.jpg" class="d-block w-100" alt="Figma проект 2">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-3.jpg" class="d-block w-100" alt="Figma проект 3">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-4.jpg" class="d-block w-100" alt="Figma проект 4">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-5.jpg" class="d-block w-100" alt="Figma проект 5">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-6.jpg" class="d-block w-100" alt="Figma проект 6">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-7.jpg" class="d-block w-100" alt="Figma проект 7">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-8.jpg" class="d-block w-100" alt="Figma проект 8">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-9.jpg" class="d-block w-100" alt="Figma проект 9">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-10.jpg" class="d-block w-100" alt="Figma проект 10">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-11.jpg" class="d-block w-100" alt="Figma проект 11">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-12.jpg" class="d-block w-100" alt="Figma проект 12">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-13.jpg" class="d-block w-100" alt="Figma проект 13">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-14.jpg" class="d-block w-100" alt="Figma проект 14">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-15.jpg" class="d-block w-100" alt="Figma проект 15">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-16.jpg" class="d-block w-100" alt="Figma проект 16">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-17.jpg" class="d-block w-100" alt="Figma проект 17">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-18.jpg" class="d-block w-100" alt="Figma проект 18">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-19.jpg" class="d-block w-100" alt="Figma проект 19">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-20.jpg" class="d-block w-100" alt="Figma проект 20">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-21.jpg" class="d-block w-100" alt="Figma проект 21">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-22.jpg" class="d-block w-100" alt="Figma проект 22">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-23.jpg" class="d-block w-100" alt="Figma проект 23">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-24.jpg" class="d-block w-100" alt="Figma проект 24">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-25.jpg" class="d-block w-100" alt="Figma проект 25">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-26.jpg" class="d-block w-100" alt="Figma проект 26">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-27.jpg" class="d-block w-100" alt="Figma проект 27">
+        </div>
+        <div class="carousel-item">
+            <img src="2 images/figma-image-28.jpg" class="d-block w-100" alt="Figma проект 28">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#figmaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#figmaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+    </button>
+</div>
+
+
+          <!-- Слайдер для сувениров -->
+<h3 class="mt-5 mb-3">Сувениры, Подарки, Мерч</h3>
+<div id="merchCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Изображения из папки 3 images -->
+        <div class="carousel-item active">
+            <img src="3 images/suv-image (2).jpg" class="d-block w-100" alt="Сувенир 2">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (3).jpg" class="d-block w-100" alt="Сувенир 3">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (4).jpg" class="d-block w-100" alt="Сувенир 4">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (5).jpg" class="d-block w-100" alt="Сувенир 5">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (6).jpg" class="d-block w-100" alt="Сувенир 6">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (7).jpg" class="d-block w-100" alt="Сувенир 7">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (8).jpg" class="d-block w-100" alt="Сувенир 8">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (9).jpg" class="d-block w-100" alt="Сувенир 9">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (10).jpg" class="d-block w-100" alt="Сувенир 10">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (11).jpg" class="d-block w-100" alt="Сувенир 11">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (12).jpg" class="d-block w-100" alt="Сувенир 12">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (13).jpg" class="d-block w-100" alt="Сувенир 13">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (14).jpg" class="d-block w-100" alt="Сувенир 14">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (15).jpg" class="d-block w-100" alt="Сувенир 15">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (16).jpg" class="d-block w-100" alt="Сувенир 16">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (17).jpg" class="d-block w-100" alt="Сувенир 17">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (18).jpg" class="d-block w-100" alt="Сувенир 18">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (19).jpg" class="d-block w-100" alt="Сувенир 19">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (20).jpg" class="d-block w-100" alt="Сувенир 20">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (21).jpg" class="d-block w-100" alt="Сувенир 21">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (22).jpg" class="d-block w-100" alt="Сувенир 22">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (23).jpg" class="d-block w-100" alt="Сувенир 23">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (24).jpg" class="d-block w-100" alt="Сувенир 24">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (25).jpg" class="d-block w-100" alt="Сувенир 25">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (26).jpg" class="d-block w-100" alt="Сувенир 26">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (27).jpg" class="d-block w-100" alt="Сувенир 27">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (28).jpg" class="d-block w-100" alt="Сувенир 28">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (29).jpg" class="d-block w-100" alt="Сувенир 29">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (30).jpg" class="d-block w-100" alt="Сувенир 30">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (31).jpg" class="d-block w-100" alt="Сувенир 31">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (32).jpg" class="d-block w-100" alt="Сувенир 32">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (33).jpg" class="d-block w-100" alt="Сувенир 33">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (34).jpg" class="d-block w-100" alt="Сувенир 34">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (35).jpg" class="d-block w-100" alt="Сувенир 35">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (36).jpg" class="d-block w-100" alt="Сувенир 36">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (37).jpg" class="d-block w-100" alt="Сувенир 37">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (38).jpg" class="d-block w-100" alt="Сувенир 38">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (39).jpg" class="d-block w-100" alt="Сувенир 39">
+        </div>
+        <div class="carousel-item">
+            <img src="3 images/suv-image (40).jpg" class="d-block w-100" alt="Сувенир 40">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#merchCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#merchCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+    </button>
+</div>
+
+
+    <!-- Раздел "Контакты" -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Контакты</h2>
+            <ul class="list-unstyled">
+                <li><a href="mailto:elinafriedman@gmail.com" class="btn btn-custom">Email</a></li>
+                <li><a href="https://t.me/Alina_Friedman" class="btn btn-custom">Telegram</a></li>
+                <li><a href="https://www.facebook.com/alina.freedom/" class="btn btn-custom">Facebook</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
